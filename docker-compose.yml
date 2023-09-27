@@ -11,6 +11,7 @@ services:
     volumes:
       - 'config:/config'
     restart: always
+    network_mode: host
   mqtt:
     build: mqtt
     ports:
